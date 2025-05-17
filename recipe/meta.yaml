@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-langchain" %}
-{% set version = "0.40.5" %}
+{% set version = "0.40.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_langchain-{{ version }}.tar.gz
-  sha256: 1d25b50efbbc54f0f72f0b7018a80d0120dac95bf8955983546c6c26040cbdbf
+  sha256: 311cc4602be1b3d03d948f119daece1feef43387438cdcda146ce2ab2ddabd55
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - opentelemetry-api >=1.28.0,<2.0.0
     - opentelemetry-instrumentation >=0.50b0
     - opentelemetry-semantic-conventions >=0.50b0
-    - opentelemetry-semantic-conventions-ai 0.4.8
+    - opentelemetry-semantic-conventions-ai 0.4.9
   run_constrained:
     - langchain >=0.3.15,<0.4.0
 
