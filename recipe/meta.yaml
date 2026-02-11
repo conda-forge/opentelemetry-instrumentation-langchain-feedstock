@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-langchain" %}
-{% set version = "0.52.2" %}
+{% set version = "0.52.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_langchain-{{ version }}.tar.gz
-  sha256: 142b9856bbe9b9400c1f9e281b2b6a566898b919370f2343b6479dd21f1f2df5
+  sha256: c6fcba87637993662c3589045d55e08020b502238f45ffa30bbfb20c5f0d5b46
 
 build:
   noarch: python
